@@ -1,0 +1,104 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Form in table</title>
+		<style type="text/css">
+			form{
+				width:75%;
+				padding:1em;
+				margin: 0 auto;
+				border: 1px dashed pink;
+			}
+			input[type='text'], input[type='password'], select {
+				width:400px;
+				padding: 12px 6px;
+				border:none;
+				border-bottom: 1px dashed #ccff ;
+				background-color: #ffcc;
+
+			}
+			textarea{
+				resize: none;
+				background-color: #ddee;
+				border: none;
+			}
+			input[type=submit]{
+				background-color: #c3c3;
+				border:none;
+				width:400px;
+				paddiing:5px 3px;
+
+			}
+			input[type=submit]:hover{
+				background-color: blue;
+				color:red;
+			}
+			input[type='text']:hover, input[type='password']:hover, select:hover{
+				border-color: red;
+			}
+			input[type='text']:focus, input[type='password']:focus, select:focus{
+				background-color: lightgreen;
+			}
+
+		</style>
+	</head>
+	<body>
+		<fieldset>
+			<legend>Html form Table</legend>
+			<form>
+				<table>
+					<tr>
+						<td><label for="user">User Name</label></td>
+						<td><input type="text" name="user" id="user"></td>
+					</tr>
+					<tr>
+						<td><label for="pass">Password</label></td>
+						<td><input type="password" name="pass" id="pass"></td>
+					</tr>
+					<tr>
+						<td><label>Gender</label></td>
+						<td>
+							Male: <input type="radio" name="gender" value="male"><br>
+							Female:<input type="radio" name="gender" value="male"><br>
+							Other:<input type="radio" name="gender" value="other"><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td><label>Skills</label></td>
+						<td>
+							HTML:<input type="checkbox" name="html"><br>
+							CSS:<input type="checkbox" name="css"><br>
+							PHP:<input type="checkbox" name="php"><br>
+							JAVA:<input type="checkbox" name="java"><br>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="county">Select your county</label></td>
+						<td>
+							<select id="county" name="county">
+								<option value="">Select Your County</option>
+								<option value="nairobi">Nairobi</option>
+								<option value="mombasa">Mombasa</option>
+								<option value="kisumu">Kisumu</option>
+								<option value="nakuru">Nakuru</option>
+								<option value="kajiado">kajiado</option>
+								<option value="kiambu">Kiambu</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="comments">Comments</label></td>
+						<td><textarea id="com" rows="10" cols="50"></textarea></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="submit" name="submmit" value="Submit here">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
+
+	</body>
+	</html>
